@@ -37,7 +37,7 @@ python demo.py --vid_file merged_courtyard_basketball_01.mp4 --gpu 0
 Pre-processed PoseTrack, 3DPW, MPI-INF-3DHP and Human3.6M are uploaded by TCMR authors from [here](https://drive.google.com/drive/folders/1h0FxBGLqsxNvUL0J43WkTxp7WgYIBLy-?usp=sharing).
 Pre-processed InstaVariety is uploaded by VIBE authors [here](https://owncloud.tuebingen.mpg.de/index.php/s/MKLnHtPjwn24y9C).
 AMASS can be generated following the instruction provided by VIBE authors [here](https://github.com/mkocabas/VIBE/blob/master/doc/train.md).
-Download pseudo SMPL labels from [here](https://drive.google.com/drive/folders/1iLTMYMVo_BwRu3P-LpM_Bp1O6_e-xPh6?usp=sharing). You could generate it by yourself with code
+Download pseudo SMPL labels from [here](https://drive.google.com/drive/folders/1iLTMYMVo_BwRu3P-LpM_Bp1O6_e-xPh6?usp=sharing). You could also generate it by yourself with following code
 ```bash
 source scripts/prepare_pseudo_thetas.sh
 ```
