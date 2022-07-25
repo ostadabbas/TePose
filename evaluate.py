@@ -91,7 +91,7 @@ if __name__ == "__main__":
         batch_size=450,
         seqlen=16,
         hidden_size=1024,
-        pretrained='/mnt/Documents/Projects/HumanPoseEstimation/3D/VIBE/data/vibe_data/spin_model_checkpoint.pth.tar',
+        pretrained='data/base_data/spin_model_checkpoint.pth.tar',
         add_linear=True,
         bidirectional=False,
         use_residual=True,
