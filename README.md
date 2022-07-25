@@ -114,6 +114,8 @@ python train.py --cfg ./configs/repr_wopw_mpii3d_model.yaml --gpu 0
 ```
 
 ## License
-This project is licensed under the terms of the MIT license.
+* This code is for non-commercial purpose only. 
+* For further inquiry please contact: Augmented Cognition Lab at Northeastern University: http://www.northeastern.edu/ostadabbas/ 
+
 
 
