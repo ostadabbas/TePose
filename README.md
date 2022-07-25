@@ -71,7 +71,12 @@ ${ROOT}
 - Run the evaluation code with a corresponding config file to get performance in different settings. You could also check the visual performance by adding "--render" at the end of the command.
 ```bash
 # dataset: 3dpw, mpii3d, h36m 
-python evaluate.py --dataset 3dpw --cfg ./configs/repr_table4_3dpw_model.yaml --gpu 0 
+python evaluate.py --dataset 3dpw --cfg ./configs/repr_wpw_3dpw_model.yaml --gpu 0 
+python evaluate.py --dataset 3dpw --cfg ./configs/repr_wopw_3dpw_model.yaml --gpu 0 
+python evaluate.py --dataset h36m --cfg ./configs/repr_wpw_h36m_mpii3d_model.yaml --gpu 0 
+python evaluate.py --dataset h36m --cfg ./configs/repr_wopw_h36m_model.yaml --gpu 0 
+python evaluate.py --dataset mpii3d --cfg ./configs/repr_wpw_h36m_mpii3d_model.yaml --gpu 0 
+python evaluate.py --dataset mpii3d --cfg ./configs/repr_wopw_mpii3d_model.yaml --gpu 0 
 ```
 - You may test options such as average filtering and rendering. See the bottom lines of `${ROOT}/lib/core/config.py`.
 
@@ -89,6 +94,10 @@ We compare proposed TePose with state-of-the-art methods in the following tables
 # training outputs are saved in `experiments` directory
 # mkdir experiments
 python train.py --cfg ./configs/repr_wpw_3dpw_model.yaml --gpu 0 
+python train.py --cfg ./configs/repr_wpw_h36m_mpii3d_model.yaml --gpu 0 
+python train.py --cfg ./configs/repr_wopw_3dpw_model.yaml --gpu 0 
+python train.py --cfg ./configs/repr_wopw_h36m_model.yaml --gpu 0
+python train.py --cfg ./configs/repr_wopw_mpii3d_model.yaml --gpu 0  
 ```
 - After the training, the checkpoints are saved in `${ROOT}/experiments/{date_of_training}/`. Change the config file's `TRAIN.PRETRAINED` with the checkpoint path (either `checkpoint.pth.tar` or `model_best.pth.tar`) and follow the evaluation command.
 
