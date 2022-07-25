@@ -61,9 +61,9 @@ def smooth_pose_mat(pose, ratio = 0.3):
 
 if __name__ == "__main__":
 
-    3dpw_img_path = '/mnt/ExtraDisk/3DPW'
-    h36m_img_path = '/mnt/ExtraDisk/Human36M/from_PoseNet'
-    mpii3d_img_path = '/mnt/ExtraDisk/MPI-INF-3DHP'
+    img_path_3dpw = '/mnt/ExtraDisk/3DPW'
+    img_path_h36m = '/mnt/ExtraDisk/Human36M/from_PoseNet'
+    img_path_mpii3d = '/mnt/ExtraDisk/MPI-INF-3DHP'
 
     cfg, cfg_file, args = parse_args()
     SMPL_MAJOR_JOINTS = np.array([1, 2, 4, 5, 7, 8, 16, 17, 18, 19, 20, 21])
@@ -72,7 +72,6 @@ if __name__ == "__main__":
         if torch.cuda.is_available()
         else torch.device("cpu")
     )
-
 
     """ Evaluation Options """
     target_dataset = args.dataset  # 'mpii3d' '3dpw' 'h36m'
@@ -311,11 +310,11 @@ if __name__ == "__main__":
                 imgname_tmp = []
                 for kl in range(len(imgname)):
                     if target_dataset=='3dpw':
-                        imgname_tmp.append(3dpw_img_path + imgname[kl][9:])
+                        imgname_tmp.append(img_path_3dpw + imgname[kl][9:])
                     elif target_dataset=='mpii3d':
-                        imgname_tmp.append(mpii3d_img_path + imgname[kl][12:])
+                        imgname_tmp.append(img_path_mpii3d + imgname[kl][12:])
                     elif target_dataset=='h36m':
-                        imgname_tmp.append(h36m_img_path + imgname[kl][9:])
+                        imgname_tmp.append(img_path_h36m + imgname[kl][9:])
 
                 imgname = imgname_tmp
                 img = cv2.imread(imgname[0])
