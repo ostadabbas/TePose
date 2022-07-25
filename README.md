@@ -24,17 +24,7 @@ source scripts/get_base_data.sh
 ```
 - Download pre-trained [TePose weights](https://drive.google.com/drive/folders/14FcyVy49ryBH1AuVKgBXDNqjZsi-tivY?usp=sharing). 
 
-The data directory structure should follow the below hierarchy.
-```
-${ROOT}  
-|-- data  
-|   |-- base_data  
-|   |-- pretrained_models
-|-- demo.py
-:
-:
-|-- merged_courtyard_basketball_01.mp4
-```
+
 - Run demo with options (e.g. render on plain background). See more option details in bottom lines of `demo.py`.
 - A video overlayed with rendered meshes will be saved in `${ROOT}/output/demo_output/`. 
 ```bash
