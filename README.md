@@ -88,7 +88,7 @@ We compare proposed TePose with state-of-the-art methods in the following tables
 
 ### Reproduction (Training)
 
-- TePose models with different settings can be trained with different configuration file. For example, training model without 3DPW as train set for evaluating on 3DPW test set (results of 4 columns on the right of first table) can be realized by following command
+- TePose models with different settings can be trained with different configuration file. For example, training model without 3DPW as train set for evaluating on 3DPW test set (results of 4 columns on the right of first table) can be realized by the first command as follows
 
 ```bash
 # training outputs are saved in `experiments` directory
