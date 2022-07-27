@@ -107,7 +107,7 @@ python train.py --cfg ./configs/repr_wopw_mpii3d_model.yaml --gpu 0
 @inproceedings{wang2022tepose,
   title={Live Stream Temporally Embedded 3D Human Body Pose and Shape Estimation},
   author={Wang, Zhouping and Ostadabbas, Sarah},
-  booktitle={arXiv preprint: },
+  booktitle={arXiv preprint: https://arxiv.org/pdf/2207.12537.pdf},
   month     = {July},
   year      = {2022}
 }
